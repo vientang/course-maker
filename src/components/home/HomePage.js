@@ -6,8 +6,8 @@ class HomePage extends React.Component {
 		return (
 			<div className="jumbotron">
 				<h1>Course Maker</h1>
-				<p>Build your own custom curriculum classes, books, workshops, videos, tutorials, and whatever else you've done.</p>
-				<Link to='login' className='btn btn-primary btn-lg'>Start Now</Link>
+				<p>Build your own custom curriculum classes, books, workshops, videos and tutorials to keep track of your customized learning plan.</p>
+				<Link to="signup" className="btn btn-primary btn-lg">Sign up</Link>
 			</div>
 		);
 	}
