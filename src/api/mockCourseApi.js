@@ -15,7 +15,7 @@ export const courses = [
     category: "JavaScript"
   },
   {
-    id: "web-components-shadow-dom",
+    id: "object-oriented-javascript--ud015",
     course: "Udacity",
     title: "Object Oriented Javascript",
     url: "https://www.udacity.com/course/object-oriented-javascript--ud015",
@@ -83,8 +83,13 @@ class CourseApi {
           //Just simulating creation here.
           //The server would generate ids and url's for new courses in a real app.
           //Cloning so copy returned is passed by value rather than by reference.
-          // course.id = generateId(course);
-          // course.url = `http://www.pluralsight.com/courses/${course.id}`;
+
+          // Handle displaying course.course with just the name
+            // take course url string
+            // grab just the name of the site
+            // make first character upper case
+            // assign that truncated string to course.course
+            // then push to courses
           courses.push(course);
         }
 

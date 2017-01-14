@@ -1,6 +1,7 @@
 import express from 'express';
 import webpack from 'webpack';
 import path from 'path';
+import bodyParser from 'body-parser';
 import config from '../webpack.config.dev.js';
 import open from 'open';
 import colors from 'colors';
@@ -9,6 +10,9 @@ import colors from 'colors';
 const app = express();
 const port = 3000;
 const compiler = webpack(config);
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:false}));
 
 app.use(require('webpack-dev-middleware')(compiler, {
 	noInfo: true,
@@ -20,6 +24,11 @@ app.use(require	('webpack-hot-middleware')(compiler));
 app.get('*', (req, res) => {
 	res.sendFile(path.join(__dirname, '../src/index.html'));
 });
+
+// app.post('/register', (req, res, next) => {
+// 	console.log('got in the register page')
+// 	res.send('Your sign up was successful!');
+// });
 
 app.listen(port, err => {
 	if (err) {

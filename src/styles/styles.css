@@ -1,3 +1,8 @@
+body {
+  background-image: url(seigaiha.png);
+  background-repeat: repeat;
+}
+
 #app {
 	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #4d4d4d;
@@ -13,4 +18,8 @@ a.active {
 nav {
 	padding-top: 20px;
 	margin-bottom: 20px;
+}
+
+.jumbotron {
+	opacity: 0.9;
 }

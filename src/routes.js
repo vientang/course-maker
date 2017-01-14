@@ -5,6 +5,7 @@ import HomePage from './components/home/HomePage';
 import AboutPage from './components/about/AboutPage';
 import CoursesPage from './components/course/CoursesPage';
 import ManageCoursePage from './components/course/ManageCoursePage';
+import CourseList from './components/course/CourseList';
 
 export default (
 	<Route path="/" component={App}>
@@ -13,5 +14,6 @@ export default (
 		<Route path="course" component={ManageCoursePage}/>
 		<Route path="course/:id" component={ManageCoursePage}/>
 		<Route path="about" component={AboutPage}/>
+		<Route path="courselist" component={CourseList}/>
 	</Route>
 );
