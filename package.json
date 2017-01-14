@@ -6,8 +6,9 @@
   "engines": {
     "node": "6.6.0"
   },
-  "scripts": {       
-    "start": "npm-run-all --parallel open:src lint:watch test:watch",
+  "scripts": { 
+    "start": "./node_modules/.bin/babel-node tools/srcServer.js",      
+    "dev": "npm-run-all --parallel open:src lint:watch test:watch",
     "open:src": "babel-node tools/srcServer.js",
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
     "lint:watch": "npm run lint -- --watch",
