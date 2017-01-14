@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "an app for the self learners to keep track of the classes they’ve taken.",
   "main": "index.js",
-  "scripts": {
+  "engines": {
+    "node": "6.6.0"
+  },
+  "scripts": {    
     "start": "npm-run-all --parallel open:src lint:watch test:watch",
     "open:src": "babel-node tools/srcServer.js",
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
