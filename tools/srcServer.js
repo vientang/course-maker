@@ -8,7 +8,7 @@ import colors from 'colors';
 
 /* eslint-disable no-console */
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const compiler = webpack(config);
 
 app.use(bodyParser.json());
