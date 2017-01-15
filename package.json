@@ -33,6 +33,7 @@
     "babel-register": "6.8.0",
     "body-parser": "^1.15.2",
     "bootstrap": "3.3.6",
+    "express": "^4.13.4",
     "jquery": "2.2.3",
     "react": "15.0.2",
     "react-dom": "15.0.2",
@@ -41,7 +42,8 @@
     "react-router-redux": "4.0.4",
     "redux": "3.5.2",
     "redux-thunk": "2.0.1",
-    "toastr": "2.1.2"
+    "toastr": "2.1.2",
+    "webpack": "^1.13.0"
   },
   "devDependencies": {
     "babel-cli": "6.8.0",
