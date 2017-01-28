@@ -5,12 +5,12 @@ const RegisterForm = () => {
 	return (
 		<form 
 			method='POST' 
-			action='/register'
+			action='/'
 			className="form-group">
 				<h1>Sign up!</h1>
-				<TextInput placeholder="name"/>
-				<TextInput placeholder="email"/>
-				<TextInput placeholder="password"/>
+				<TextInput placeholder="name" name="name"/>
+				<TextInput placeholder="email" name="email"/>
+				<TextInput placeholder="password" name="password"/>
 				<input type="submit" className="btn btn-primary"/>
 		</form>
 	);

@@ -6,10 +6,12 @@ import AboutPage from './components/about/AboutPage';
 import CoursesPage from './components/course/CoursesPage';
 import ManageCoursePage from './components/course/ManageCoursePage';
 import CourseList from './components/course/CourseList';
+import Register from './components/register/RegisterForm';
 
 export default (
 	<Route path="/" component={App}>
 		<IndexRoute component={HomePage}/>
+		<Route path="register" component={Register}/>
 		<Route path="courses" component={CoursesPage}/>
 		<Route path="course" component={ManageCoursePage}/>
 		<Route path="course/:id" component={ManageCoursePage}/>

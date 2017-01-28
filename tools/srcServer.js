@@ -23,14 +23,15 @@ app.use(express.static('../dist'));
 
 app.use(require	('webpack-hot-middleware')(compiler));
 
+// routes
 app.get('*', (req, res) => {
 	res.sendFile(path.join(__dirname, '../src/index.html'));
 });
 
-// app.post('/register', (req, res, next) => {
-// 	console.log('got in the register page')
-// 	res.send('Your sign up was successful!');
-// });
+app.post('/', (req, res, next) => {
+	console.log('User:', req.body.name);
+	res.send('Your sign up was successful!');
+});
 
 app.listen(port, err => {
 	if (err) {
