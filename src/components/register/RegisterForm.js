@@ -4,8 +4,7 @@ import TextInput from '../common/TextInput';
 const RegisterForm = () => {
 	return (
 		<form 
-			method='POST' 
-			action='/'
+			onSubmit={}
 			className="form-group">
 				<h1>Sign up!</h1>
 				<TextInput placeholder="name" name="name"/>
@@ -17,3 +16,5 @@ const RegisterForm = () => {
 };
 
 export default RegisterForm;
+
+// use fetch, superagent, request
