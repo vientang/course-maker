@@ -37,9 +37,21 @@ class ManageCoursePage extends React.Component {
 	saveCourse(event) {
 		event.preventDefault();
 		this.setState({saving: true});
-		// console.log(this.state.course)
-		// if this.state.course.course isn't prefixed with 'http://'
-		// call updateCourseLink to add it
+
+		// Make active when ready to save to Firebase
+		// const course = {
+	  //   id: this.state.course.id + 1,
+	  //   course: this.state.course.course,
+	  //   title: this.state.course.title,
+	  //   url: this.state.course.url,
+	  //   author: this.state.course.author,
+	  //   category: this.state.course.category
+			// startedAt: firebase.database.ServerValue.TIMESTAMP
+		// }
+		// firebase.database().ref('courses/' + course.id).set(course);
+		// this.setState({message: ''});
+
+
 		this.props.actions.saveCourse(this.state.course)
 			.then(() => this.redirect())
 			.catch(error => {
