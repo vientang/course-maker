@@ -1,3 +1,5 @@
+/public/theme/
+
 # Logs
 logs
 *.log
@@ -38,3 +40,6 @@ src/config
 
 # Optional REPL history
 .node_repl_history
+
+# Webpack builds
+dist

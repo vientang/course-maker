@@ -1,7 +1,7 @@
 [Course Maker]: https://course-maker.herokuapp.com/
 
 # course-maker
-An app for the self learners to keep track of the classes, training videos, books, workshops, etc.  
+An app for the self learners to keep track of the classes, training videos, books, workshops, etc. Course Maker is a web based application, built with React/Redux persists data on a Mongo database. 
 
 ##Description
 There's a massive skills migration towards coding and learning tech in general. Many people find a variety of resources to learn but need a place to keep track of them. CourseMaker allows a self-learner to keep records of the material they've used to learn programming. 
